@@ -14,8 +14,10 @@ html, body{
 	margin:0 auto;	
 }
 header{
-	padding: 5px;	
+	padding: 5px;
+	max-height: 130px;	
 }
+
 .logo img{	
 	width: 150px;	
 	margin-left: 20px;
@@ -33,7 +35,7 @@ header{
 	margin: 0;
 	padding: 0;
 	padding-top: 3px;
-	z-index: 1000;
+	z-index: 999;
 	margin-right: 0;
 	text-align: center;
 	font-size: 12px;	
@@ -82,6 +84,13 @@ header{
 	background-color: rgba(0,0,0,.4);
 	color:#fff;
 }
+
+.active{
+	background-color: rgba(0,0,0,.4) !important;
+	color:#fff !important;
+	
+}
+
 .clearfix:after{
 	content: '';
 	display: table;
@@ -89,8 +98,7 @@ header{
 }
 .main{
 	min-height: 624px; 
-	padding: 15px;
-	/*position: relative;*/
+	padding: 15px;	
 }
 h1{
 	text-align: center;
@@ -110,8 +118,7 @@ h1{
 	
 }
 
-.main img{
-	/*width: 300px;*/
+.main img{	
 	padding: 0;
 	margin: 0;
 	height: 100%;	
@@ -131,16 +138,14 @@ footer{
 	margin-top: 33px;
 }
 
-footer p{
-	/*outline: 1px solid red;*/
+footer p{	
 	display: inline-block;
 	margin-top: 10px;
 	margin-left: 10px;
 }
 
 footer address{
-	float: right;
-	/*outline: 1px solid red;*/
+	float: right;	
 	margin-top: 10px;
 	margin-right: 10px;
 }
@@ -173,13 +178,11 @@ footer address{
 
 /* Products  */
 
-.main .products{
-	/*border: 1px solid green;*/
+.main .products{	
 	float:left; 
 	margin-right: 20px;
 	margin-bottom: 20px;
-	overflow: hidden;
-	/*border-radius: 8px;*/	
+	overflow: hidden;	
 	width: 28%;
 	margin:0 2% 2% 3%;
 	text-align: center;
@@ -226,8 +229,7 @@ figure{
 
 /* Product order */
 
-li.title_p{
-	/*list-style-type: square;*/
+li.title_p{	
 	list-style-image: url(img/arrow.png);
 	font-weight: bold;
 }
@@ -238,15 +240,13 @@ li.title_in{
 	list-style-type: circle;
 }
 
-.ingridients{
-	/*outline: 1px solid red;*/
+.ingridients{	
 	margin-left: 31%;
 	font-size: 15px;
 }
 
 .ingridients h3 {	
-	text-transform: uppercase;
-	/*outline: 1px solid red;*/
+	text-transform: uppercase;	
 }
 
 .form_order h3{	
@@ -255,12 +255,7 @@ li.title_in{
 	text-align: center;
 }
 
-.form_order{
-	/*outline: 1px solid red;*/
-}
-
-form{
-	/*outline: 1px solid red;*/
+form{	
 	max-width: 300px;
 	margin: 0 auto;
 }
@@ -271,13 +266,11 @@ input{
 	padding: 10px 15px;
 	margin-bottom: 15px;
 	border: none;
-	outline: none;
-	/*border: 1px solid transparent;*/
+	outline: none;	
 	border:1px solid #ccc;
 	border-radius: 8px;
 }
-input:focus, input:hover, textarea:focus, textarea:hover{
-	/*border:1px solid green;*/
+input:focus, input:hover, textarea:focus, textarea:hover{	
 	border: 1px solid transparent;
 	box-shadow: 0 0 5px green;
 }
@@ -323,8 +316,7 @@ textarea{
 }
 
 .main address{
-	font-size: 20px;
-	/*outline: 1px solid red;*/
+	font-size: 20px;	
 	display: inline-block;
 	padding: 10px;
 	margin-left: 100px;
@@ -340,10 +332,39 @@ textarea{
 	height: 300px;
 }
 
-.wrapper_address{
-	/*outline: 1px solid red;*/
+.wrapper_address{	
 	max-width: 740px;
 	height: 300px;
 	margin: 20px auto;
 }
 
+#tel{
+	position: fixed;
+	width: 25px;
+	height: 225px;
+	top: 280px;
+	left: 0;
+	border-radius: 8px;	
+	background-color: rgba(0,0,0,.4);	
+}
+
+#tel:hover{
+	background-color: rgba(0,0,0,.6);	
+}
+
+#tel img{
+	border: none;
+	width: 25px;
+	height: 225px;
+}
+
+/* news */
+
+.wrapper__news p{
+	text-indent: 20px;
+	margin-top: 10px;
+}
+
+.wrapper__news h2{
+	margin-bottom: 10px;
+}

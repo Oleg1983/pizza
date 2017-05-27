@@ -3,24 +3,28 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Pizza</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="shortcut icon" href="../favicon.ico">
 </head>
 <body>
 <div class="wrapper">
+	<div id="tel">
+		<a href="tel:12119413636"><img src="../img/tel.png" alt="tel"></a>
+	</div>
 	<header>
 		<div class="logo">
-			<img src="img/logo.png" alt="pizza">
+			<img src="../img/logo.png" alt="pizza">
 		</div>
 	</header>
 	<hr>
 	<nav>
 		<ul class="menu clearfix">
-			<li><a href="index.html">home</a></li>
+			<li><a href="../index.html">home</a></li>
 			<li>
 				<a href="products.html">products</a>
 				<ul class="sub_menu">
 					<li><a href="product_1.html">Mozzarella</a></li>
-					<li><a href="product_2.html">Pizza Man</a></li>
+					<li><a class="active" href="product_2.html">Pizza Man</a></li>
 					<li><a href="product_3.html">Pizza Bacon</a></li>
 				</ul>
 			</li>
@@ -32,12 +36,12 @@
 	<section class="main clearfix">
 		<figure>
 			<div class="products">					
-				<img src="img/Pizza_de_Bacon_3.jpg" alt="mozzarella">
+				<img src="../img/Pizza_Man_2.jpg" alt="mozzarella">
 				<!-- <figcaption>Pizza Mozzarella</figcaption> -->
 			</div>
 		</figure>
 		<div class="ingridients">
-			<h3>Pizza Bacon</h3>
+			<h3>Pizza Man</h3>
 			<ul class="order">
 				<li class="title_p">Dough/Flour
 					<ul>
@@ -70,7 +74,7 @@
 		<div class="form_order">
 			<h3>Your Order:</h3>
 
-			<form action="formdata.php" method="POST">
+			<form action="../formdata.php" method="POST">
 				<label for="name">Name *</label>
 				<input type="text" name="name" id="name" placeholder="Your name" required>
 
